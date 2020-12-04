@@ -54,41 +54,41 @@
      <Compile Include="Assets\Scripts\UIScript.cs" />
      <Compile Include="Assets\Scripts\CameraFocusController.cs" />
      <Compile Include="Assets\Scripts\PedalScript.cs" />
+     <None Include="Assets\StreamingAssets\Vuforia\bicycle.xml" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml" />
      <None Include="Assets\StreamingAssets\Vuforia\bicycle_OT.xml" />
-     <None Include="Assets\StreamingAssets\Vuforia\bicycle.xml" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="VuforiaScripts">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="VuforiaEditorScripts">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -280,7 +280,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.11f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/PackageCache/com.ptc.vuforia.engine@9.6.3/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_maintainance_ar/Library/PackageCache/com.ptc.vuforia.engine@9.6.3/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
