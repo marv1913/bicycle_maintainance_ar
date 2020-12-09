@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\CameraFocusController.cs" />
      <Compile Include="Assets\Scripts\PedalScript.cs" />
      <None Include="Assets\StreamingAssets\Vuforia\bicycle.xml" />
+     <None Include="Assets\Prefabs\Allen_Keys\README_Import_to_2018-HDRP.txt" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml" />
      <None Include="Assets\StreamingAssets\Vuforia\bicycle_OT.xml" />
  <Reference Include="Unity.Timeline.Editor">
