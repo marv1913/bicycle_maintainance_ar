@@ -67,12 +67,12 @@ public class PedalScript : MonoBehaviour
         Quaternion currentRotation = wrench.transform.localRotation;
         if (leftPedal)
         {
-            currentRotation = Quaternion.Euler(currentRotation.eulerAngles + new Vector3(0, 0, -0.5f));
+            currentRotation = Quaternion.Euler(currentRotation.eulerAngles + new Vector3(0, 0, -60) * Time.deltaTime);
         
         }
         else
         {
-            currentRotation = Quaternion.Euler(currentRotation.eulerAngles + new Vector3(0, 0, 0.5f));
+            currentRotation = Quaternion.Euler(currentRotation.eulerAngles + new Vector3(0, 0, 60) * Time.deltaTime);
         }
         wrench.transform.localRotation = currentRotation;
         if (wrench.transform.localRotation.eulerAngles.z < 110 && leftPedal)
@@ -86,8 +86,8 @@ public class PedalScript : MonoBehaviour
 
     private void StartAllenAnimation()
     {
-        RotateGameObject(allen, new Vector3(0, 0, 0.5f));
-        if (allen.transform.localRotation.eulerAngles.z > 355)
+        RotateGameObject(allen, new Vector3(0, 0, 60)*Time.deltaTime);
+        if (allen.transform.rotation.eulerAngles.z > 100)
         {
             allen.transform.localRotation = _defaultRotationAllen;
         }
