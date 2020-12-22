@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class PedalScript : MonoBehaviour
 {
-    public GameObject wrench;
-    public GameObject allen;
+    public GameObject wrenchRotationAxis;
+    public GameObject allenRotationAxis;
     public Dropdown myDropdown;
     public Text scrollbarText;
     public bool leftPedal;
@@ -14,8 +14,9 @@ public class PedalScript : MonoBehaviour
     public float speed = 0.1f;
     public Vector3 canvasPostion;
     public Vector3 canvasRotation;
-
-    private Quaternion _defaultRotationWrench;
+    private ToolMovement _wrenchMovementScript;
+    private ToolMovement _allenMovementScript;
+    
     private Quaternion _defaultRotationAllen;
     private Vector3 _lastCanvasPosition;
     
@@ -24,16 +25,15 @@ public class PedalScript : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        _defaultRotationWrench = wrench.transform.localRotation;
-        _defaultRotationAllen = allen.transform.localRotation;
-
-
+        _wrenchMovementScript = wrenchRotationAxis.GetComponent<ToolMovement>();
+        _allenMovementScript = allenRotationAxis.GetComponent<ToolMovement>();
+        
         myDropdown.onValueChanged.AddListener(delegate { MyDropdownValueChangedHandler(myDropdown); });
         SetScrollbarText(myDropdown.value);
         canvas.transform.position = canvasPosition.position;
         _lastCanvasPosition = transform.position;
 
-        InvokeRepeating("PlaceCanvas", 1f, 0.01f);
+        // InvokeRepeating("PlaceCanvas", 1f, 0.01f);
     }
 
     // Update is called once per frame
@@ -41,22 +41,21 @@ public class PedalScript : MonoBehaviour
     {
         if (myDropdown.value == 1)
         {
-            wrench.SetActive(true);
-            StartWrenchAnimation();
+            _wrenchMovementScript.StartMovement();
+            // StartWrenchAnimation();
         }
         else
         {
-            wrench.SetActive(false);
+            _wrenchMovementScript.StopMovement();
         }
-
         if (myDropdown.value == 2)
         {
-            allen.SetActive(true);
-            StartAllenAnimation();
+            _allenMovementScript.StartMovement();
+            // StartWrenchAnimation();
         }
         else
         {
-            allen.SetActive(false);
+            _allenMovementScript.StopMovement();
         }
         // PlaceCanvas();
 
@@ -69,38 +68,15 @@ public class PedalScript : MonoBehaviour
         currentRotation = Quaternion.Euler(currentRotation.eulerAngles + rotationVector);
         gameObj.transform.localRotation = currentRotation;
     }
-
-
-    private void StartWrenchAnimation()
-    {
-        Quaternion currentRotation = wrench.transform.localRotation;
-        if (leftPedal)
-        {
-            currentRotation = Quaternion.Euler(currentRotation.eulerAngles + new Vector3(0, 0, -60) * Time.deltaTime);
-        }
-        else
-        {
-            currentRotation = Quaternion.Euler(currentRotation.eulerAngles + new Vector3(0, 0, 60) * Time.deltaTime);
-        }
-
-        wrench.transform.localRotation = currentRotation;
-        if (wrench.transform.localRotation.eulerAngles.z < 110 && leftPedal)
-        {
-            wrench.transform.localRotation = _defaultRotationWrench;
-        }
-        else if (wrench.transform.localRotation.eulerAngles.z > 250 && !leftPedal)
-        {
-            wrench.transform.localRotation = _defaultRotationWrench;
-        }
-    }
+    
 
     private void StartAllenAnimation()
     {
-        RotateGameObject(allen, new Vector3(0, 0, 60) * Time.deltaTime);
-        if (allen.transform.rotation.eulerAngles.z > 100)
-        {
-            allen.transform.localRotation = _defaultRotationAllen;
-        }
+        // RotateGameObject(allen, new Vector3(0, 0, 60) * Time.deltaTime);
+        // if (allen.transform.rotation.eulerAngles.z > 100)
+        // {
+        //     allen.transform.localRotation = _defaultRotationAllen;
+        // }
     }
 
     void PlaceCanvas()
