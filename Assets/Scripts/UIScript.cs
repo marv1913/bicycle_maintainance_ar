@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,25 +10,24 @@ public class UIScript : MonoBehaviour
 
     public Button previousText;
     public Button nextText;
-    public Text text;
+    public TextMeshProUGUI text;
     public Dropdown dropdownMenu;
     public Text scrollbarText;
     public string savefileName = "testfile.txt";
     public ToolScript toolScript;
+    public int textLengthPerSite = 100;
     
     private Guidelines _guidelines;
     private string _savefilePath;
     private GameObject _canvas;
+    private List<string> _descriptionText;
+    private int _currentDescriptionTextIndex = 0;
 
     
     
     // Start is called before the first frame update
     void Start()
     {
-       
-        _canvas = gameObject.transform.GetChild(0).gameObject;
-        dropdownMenu.onValueChanged.AddListener(delegate { MyDropdownValueChangedHandler(dropdownMenu); });
-
 
     }
     
@@ -36,7 +36,70 @@ public class UIScript : MonoBehaviour
         this._canvas.SetActive(true);
         FillDropdownMenu();
         
-        scrollbarText.text = _guidelines.guidelines[dropdownMenu.value].descriptionText;
+        // scrollbarText.text = _guidelines.guidelines[dropdownMenu.value].descriptionText;
+    }
+
+    private void FillDescriptionTextList()
+    {
+        _descriptionText.Clear();
+        string fullText = _guidelines.guidelines[dropdownMenu.value].descriptionText;
+        Debug.Log(fullText);
+        if (fullText.Length > textLengthPerSite)
+        {
+            while (fullText.Length > textLengthPerSite)
+            {
+                string temp = fullText.Substring(0, textLengthPerSite);
+                fullText = fullText.Substring(textLengthPerSite);
+                _descriptionText.Add(temp);
+            }
+        }
+        _descriptionText.Add(fullText);
+        Debug.Log(_descriptionText.Count);
+    }
+
+    private void ShowCurrentText()
+    {
+        text.text = _descriptionText[_currentDescriptionTextIndex];
+    }
+
+    public void NextPage()
+    {
+        if (_currentDescriptionTextIndex < _descriptionText.Count - 1)
+        {
+            _currentDescriptionTextIndex++;
+        }
+        SetNavigationButtonVisibility();
+    }
+
+    public void PreviousPage()
+    {
+        if (_currentDescriptionTextIndex != 0)
+        {
+            _currentDescriptionTextIndex--;
+        }
+        SetNavigationButtonVisibility();
+    }
+
+    private void SetNavigationButtonVisibility()
+    {
+        if (_currentDescriptionTextIndex == _descriptionText.Count - 1)
+        {
+            nextText.gameObject.SetActive(false);
+        }
+        else
+        {
+            nextText.gameObject.SetActive(true);
+        }
+
+        if (_currentDescriptionTextIndex == 0)
+        {
+            previousText.gameObject.SetActive(false);
+        }
+        else
+        {
+            previousText.gameObject.SetActive(true);
+        }
+        ShowCurrentText();
     }
     
     public void DisableUI()
@@ -56,6 +119,9 @@ public class UIScript : MonoBehaviour
         {
             dropdownMenu.options.Add(new Dropdown.OptionData(guideline.buttonName));
         }
+        SetDropdownIndex(1);
+        SetDropdownIndex(0);
+
     }
 
     // private void StopAllAnimations()
@@ -70,7 +136,9 @@ public class UIScript : MonoBehaviour
     private void MyDropdownValueChangedHandler(Dropdown target)
     {
         toolScript.StartAnimation(target.value);
-        scrollbarText.text = _guidelines.guidelines[target.value].descriptionText;
+        // scrollbarText.text = _guidelines.guidelines[target.value].descriptionText;
+        FillDescriptionTextList();
+        SetNavigationButtonVisibility();
     }
 
     public void SetDropdownIndex(int index)
@@ -107,6 +175,13 @@ public class UIScript : MonoBehaviour
     {
         _savefilePath = Application.dataPath + "/" + savefileName;
         _guidelines = LoadGuidelines();
+        
+        _descriptionText = new List<string>();
+        _canvas = gameObject.transform.GetChild(0).gameObject;
+        dropdownMenu.onValueChanged.AddListener(delegate { MyDropdownValueChangedHandler(dropdownMenu); });
+        
+        FillDescriptionTextList();
+        SetNavigationButtonVisibility();
 
     }
     
