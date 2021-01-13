@@ -9,7 +9,8 @@ public class MainMenu : MonoBehaviour
     {
         // Load next level
         // ToDo make sure to add all scenes in Build Settings
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Scenes/ComponentScene");
     }
 
     public void QuitGame()

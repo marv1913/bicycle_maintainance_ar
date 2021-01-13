@@ -21,13 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Migration/AddVuforiaEnginePackage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Migration/AddVuforiaEnginePackage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EditorMigrationScripts.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EditorMigrationScripts.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/EditorMigrationScripts.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/EditorMigrationScripts.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QCAR/somedata16" beforeDir="false" afterPath="$PROJECT_DIR$/QCAR/somedata16" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,7 @@
         <option value="$PROJECT_DIR$/Assets/connectionLine.cs" />
         <option value="$PROJECT_DIR$/Assets/videoPlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LookAtScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
       </list>
     </option>
   </component>
@@ -90,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607690639700</updated>
       <workItem from="1607690650720" duration="3891000" />
+      <workItem from="1610553526122" duration="420000" />
     </task>
     <servers />
   </component>
