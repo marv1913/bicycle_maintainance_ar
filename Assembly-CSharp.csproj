@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4dda8e86-0e4d-3cc9-3412-aff7e73de688}</ProjectGuid>
+    <ProjectGuid>{868EDA4D-4D0E-C93C-3412-AFF7E73DE688}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -49,6 +49,14 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.17f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.17f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFocusController.cs" />
      <Compile Include="Assets\Scripts\LookAtScript.cs" />
@@ -124,8 +132,8 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
- <Reference Include="VuforiaScripts">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
+ <Reference Include="Unity.CollabProxy.Editor">
+ <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -136,14 +144,8 @@
  <Reference Include="Unity.Timeline">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
- <Reference Include="VuforiaEditorScripts">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -151,8 +153,11 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine">
- <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+ <Reference Include="VuforiaScripts">
+ <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
+ </Reference>
+ <Reference Include="VuforiaEditorScripts">
+ <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -331,11 +336,11 @@
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor">
- <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
- </Reference>
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/PackageCache/com.ptc.vuforia.engine@9.6.3/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -685,12 +690,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="EditorMigrationScripts.csproj">
-      <Project>{fdb01193-7e60-c0c9-30c4-3c5bc51e675f}</Project>
+      <Project>{9311B0FD-607E-C9C0-30C4-3C5BC51E675F}</Project>
       <Name>EditorMigrationScripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
