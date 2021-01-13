@@ -16,7 +16,6 @@ public class ToolMovement : MonoBehaviour
     
     private bool _resetPosition;
     private bool _rotateTool = false;
-    private float _angle = 0f;
     
     private Quaternion _defaultRotationTool;
     private Vector3 _defaultRotation;
@@ -28,7 +27,6 @@ public class ToolMovement : MonoBehaviour
 
     public void StartMovement()
     {
-        
         if (!_resetPosition)
         {
             Debug.Log("setting active");
@@ -78,7 +76,6 @@ public class ToolMovement : MonoBehaviour
         }
         if (rotationLimit.z != -1)
         {
-
             if (zShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.z > rotationLimit.z|| !zShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.z < rotationLimit.z)
             {
                 restoreToDefaultRotation = true;
@@ -105,7 +102,6 @@ public class ToolMovement : MonoBehaviour
     {
         _defaultRotation = _defaultRotation + rotationVector * Time.deltaTime;
 
-     
         toolRotationAxis.transform.localRotation = Quaternion.Euler(_defaultRotation);
         RestoreToolPosition();
     }
