@@ -1,1 +1,0 @@
-# bicycle_maintainance_ar
