@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EditorMigrationScripts.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EditorMigrationScripts.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Migration/AddVuforiaEnginePackage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Migration/AddVuforiaEnginePackage.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +32,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMP_PackageUtilities.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -85,6 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607690639700</updated>
       <workItem from="1607690650720" duration="3891000" />
+      <workItem from="1610546095195" duration="776000" />
     </task>
     <servers />
   </component>
@@ -103,6 +103,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

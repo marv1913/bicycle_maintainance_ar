@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6983127089082647515}
   - component: {fileID: 6983127089082647512}
   - component: {fileID: 6983127089082647513}
-  - component: {fileID: 6983127089082647334}
   - component: {fileID: 6983127089082647335}
   m_Layer: 0
   m_Name: VideoField
@@ -58,7 +57,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -83,7 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &6983127089082647513
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -98,19 +95,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &6983127089082647334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6983127089082647333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d899cd953d76cc4ab6d016abd99f7eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
 --- !u!328 &6983127089082647335
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -145,4 +129,3 @@ VideoPlayer:
   m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
