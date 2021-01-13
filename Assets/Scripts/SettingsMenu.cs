@@ -21,5 +21,10 @@ public class SettingsMenu : MonoBehaviour
         // set duration of vibration when target is recognized
         vibrationDuration = duration;
     }
+    
+    public void ToggleValueChanged(Toggle change)
+    {
+        UIScript.useWorldSpaceTextfield = change.isOn;
+    }
   
 }
