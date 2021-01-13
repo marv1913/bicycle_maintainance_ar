@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FD27549D-8229-125B-B1F9-57E46B3740F5}</ProjectGuid>
+    <ProjectGuid>{9311B0FD-607E-C9C0-30C4-3C5BC51E675F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>EditorMigrationScripts</AssemblyName>
@@ -61,16 +61,16 @@
      <Compile Include="Assets\Editor\Migration\AddVuforiaEnginePackage.cs" />
      <None Include="Assets\Editor\Migration\EditorMigrationScripts.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_ar_new/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_ar_new/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_ar_new/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_ar_new/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -262,13 +262,13 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions.Editor">
- <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_ar_new/Library/PackageCache/com.ptc.vuforia.engine@716a8216fe/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/PackageCache/com.ptc.vuforia.engine@716a8216fe/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
- <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_ar_new/Library/PackageCache/com.ptc.vuforia.engine@716a8216fe/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/PackageCache/com.ptc.vuforia.engine@716a8216fe/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/marvi/Documents/unity_projects/bicycle_ar_new/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
