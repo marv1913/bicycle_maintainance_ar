@@ -20,6 +20,9 @@ public class TrackableHandler : MonoBehaviour
 
     private void OnTrackingLost()
     {
-        ui.SetActive(false);
+        if (null != ui)
+        {
+            ui.SetActive(false);
+        }
     }
 }
