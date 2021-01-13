@@ -132,8 +132,8 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <Reference Include="VuforiaScripts">
+ <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -144,6 +144,12 @@
  <Reference Include="Unity.Timeline">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
+ <Reference Include="VuforiaEditorScripts">
+ <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.CollabProxy.Editor">
+ <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
@@ -152,12 +158,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="VuforiaScripts">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
- </Reference>
- <Reference Include="VuforiaEditorScripts">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -337,7 +337,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
- <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/PackageCache/com.ptc.vuforia.engine@9.6.3/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/PackageCache/com.ptc.vuforia.engine@716a8216fe/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>C:/Users/karlb/Documents/GitHub/bicycle_maintainance_ar/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>

@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "com.ptc.vuforia.engine": {
-      "version": "9.6.3",
+      "version": "git+https://git-packages.developer.vuforia.com#9.6.4",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {
         "com.unity.ugui": "1.0.0"
       },
-      "url": "https://registry.packages.developer.vuforia.com"
+      "hash": "716a8216fe89b655589017441aa8e6ea2431485c"
     },
     "com.unity.collab-proxy": {
       "version": "1.2.16",
