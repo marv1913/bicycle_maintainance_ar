@@ -16,44 +16,43 @@ public class UIScript : MonoBehaviour
     public Button previousText;
     public Button nextText;
     public TextMeshProUGUI worldSpaceText;
-    public TMP_Dropdown dropdownMenu;
+    
     public Text scrollbarText;
     public ToolScript toolScript;
     public int textLengthPerSite = 100;
     public StablizationScript worldSpaceDescriptionText;
     public GameObject worldSpaceCanvas;
-    public GameObject textScrollView; 
-    
+    public GameObject textScrollView;
+    public TMP_Dropdown dropdownMenu;
+
     private Guidelines _guidelines;
-    private GameObject _canvas;
     private List<string> _descriptionText;
     private int _currentDescriptionTextIndex = 0;
     private bool _cameraIsFreezed = false;
     private TextMeshProUGUI _text;
-
     
     
     // Start is called before the first frame update
     void Start()
     {
-        _canvas = gameObject.transform.GetChild(0).gameObject;
         if (useWorldSpaceTextfield)
         {
             _text = worldSpaceText;
             textScrollView.SetActive(false);
+            worldSpaceCanvas.SetActive(true);
+
         }
         else
         {
             _text = textScrollView.GetComponentInChildren<TextMeshProUGUI>();
-            Debug.Log(_text);
             worldSpaceCanvas.SetActive(false);
+            textScrollView.SetActive(true);
+
         }
-        
     }
     
     public void EnableUI()
     {
-        this._canvas.SetActive(true);
         FillDropdownMenu();
     }
 
@@ -134,12 +133,7 @@ public class UIScript : MonoBehaviour
         }
         
     }
-    
-    public void DisableUI()
-    {
-        this._canvas.SetActive(false);
-    }
-    
+
     void Destroy()
     {
         dropdownMenu.onValueChanged.RemoveAllListeners();
@@ -238,7 +232,6 @@ public class UIScript : MonoBehaviour
         _guidelines = LoadGuidelines(savefileName);
         
         _descriptionText = new List<string>();
-        // _canvas = gameObject.transform.GetChild(0).gameObject;
         dropdownMenu.onValueChanged.AddListener(delegate { MyDropdownValueChangedHandler(dropdownMenu); });
         
         FillDescriptionTextList();

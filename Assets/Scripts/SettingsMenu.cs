@@ -6,13 +6,18 @@ using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
-    public static float vibrationDuration;
+    public static float vibrationDuration = 100;
 
     private Slider _slider;
+    private Toggle _textPositionToggle;
 
     private void Start()
     {
         _slider = gameObject.GetComponentInChildren<Slider>();
+        
+        _textPositionToggle = gameObject.GetComponentInChildren<Toggle>();
+        _textPositionToggle.isOn = UIScript.useWorldSpaceTextfield;
+
         vibrationDuration = _slider.value;
     }
 
