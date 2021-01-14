@@ -62,6 +62,8 @@
      <Compile Include="Assets\Scripts\GameHandler.cs" />
      <Compile Include="Assets\Scripts\LookAtScript.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\MaintenanceMenu.cs" />
+     <Compile Include="Assets\Scripts\MaintenanceScript.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PedalScript.cs" />
      <Compile Include="Assets\Scripts\SettingsMenu.cs" />
@@ -126,6 +128,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Prefabs\Allen_Keys\README_Import_to_2018-HDRP.txt" />
+     <None Include="Assets\Resources\Text\pedal_maintenance.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />

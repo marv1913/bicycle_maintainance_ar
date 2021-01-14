@@ -1,0 +1,2 @@
+{"guidelines":[{"buttonName":"description","descriptionText":"Als erstes..."},
+{"buttonName":"description","descriptionText":"Der nächste Schritt..."}]}
