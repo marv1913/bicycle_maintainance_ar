@@ -1,16 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    /// <summary>
+    /// start the discover mode
+    /// </summary>
     public void StartDiscoverMode()
     {
         // Load next level
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    /// <summary>
+    /// close the application
+    /// </summary>
     public void QuitGame()
     {
         Application.Quit();

@@ -30,7 +30,11 @@ public class ToolScript : MonoBehaviour
     {
         // uiScript.DisableUI();
     }
-
+    
+    /// <summary>
+    /// start the movement of a tool
+    /// </summary>
+    /// <param name="index"></param>
     public void StartAnimation(int index)
     {
         Debug.Log("starting animation");
