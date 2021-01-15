@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     {
         // Load next level
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene("Scenes/ComponentScene");
     }
 
     /// <summary>
