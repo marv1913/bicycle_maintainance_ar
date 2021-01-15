@@ -20,7 +20,6 @@
             </e>
           </e>
         </e>
-        <e p="pedal_left_instructions.txt" t="Include" />
         <e p="Prefabs" t="Include">
           <e p="Allen_Keys" t="Include">
             <e p="README_Import_to_2018-HDRP.txt" t="Include" />
@@ -32,8 +31,9 @@
           </e>
         </e>
         <e p="Resources" t="Include">
-          <e p="pedal_left_instructions.txt" t="Include" />
           <e p="Text" t="Include">
+            <e p="pedal_maintenance.txt" t="Include" />
+            <e p="pedal_right_instructions.txt" t="Include" />
             <e p="switch_gear_instructions.txt" t="Include" />
           </e>
         </e>
@@ -43,6 +43,8 @@
           <e p="GameHandler.cs" t="Include" />
           <e p="LookAtScript.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
+          <e p="MaintenanceMenu.cs" t="Include" />
+          <e p="MaintenanceScript.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
           <e p="PedalScript.cs" t="Include" />
           <e p="SettingsMenu.cs" t="Include" />
