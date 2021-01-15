@@ -35,17 +35,7 @@ public class MaintenanceScript : MonoBehaviour
 
     public void ShowNextStep()
     {
-        // Debug.Log("next step");
-        // if (_index == _guidelines.guidelines.Count-1)
-        // {
-        //     Debug.Log("Wartung abgeschlossen!");
-        // }
-        // else
-        // {
-        //     _index++;
-        //     LoadText();
-        //     ShowToolAnimation();
-        // }
+        LoadStep(true);
     }
     
     public void ShowPreviousStep()
@@ -66,32 +56,34 @@ public class MaintenanceScript : MonoBehaviour
     private void LoadStep(bool nextStep)
     {
         // stop animation from last step
-        // int indexToStop = _index;
-        // if (nextStep)
-        // {
-        //     _index++;
-        // }
-        // else
-        // {
-        //     _index--;
-        // }
-        // if (!CheckToolListIndexOutOfRange(indexToStop))
-        // {
-        //     tools[indexToStop].StopMovement();
-        //
-        //     tools[_index].StartMovement();
-        // }
+        Debug.Log("stop tool with index:" + _index);
+        tools[_index].StopMovement();
+        int currentIndex = _index;
+        if (nextStep)
+        {
+            _index++;
+        }
+        else
+        {
+            _index--;
+        }
+
+        if (!LoadToolAndText())
+        {
+            _index = currentIndex;
+        }
     }
 
-    private void LoadToolAndText()
+    private bool LoadToolAndText()
     {
         if (CheckListIndexOutOfRange(_guidelines.guidelines, _index) &&
             CheckListIndexOutOfRange(tools, _index))
         {
             tools[_index].StartMovement();
             LoadText();
-            
+            return true;
         }
+        return false;
     }
 
     private static bool CheckListIndexOutOfRange<T>(List<T> listToCheck, int index)
