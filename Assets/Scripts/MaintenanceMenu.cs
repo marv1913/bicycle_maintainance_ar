@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class MaintenanceMenu : MonoBehaviour
 {
-    public static string componentToMaintain = "";
+    public static string componentToMaintain = "text/pedal_maintenance";
 
     public Button pedalMaintenanceButton;
 
