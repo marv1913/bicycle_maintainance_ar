@@ -10,18 +10,7 @@ public class ToolScript : MonoBehaviour
     public List<ToolMovement> toolMovements;
     public long sleepTimeBetweenVibrate = 100;
     public GameObject canvasPosition;
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
+    
 
     /// <summary>
     /// should be added to OnTargetFoundEvent
@@ -29,18 +18,23 @@ public class ToolScript : MonoBehaviour
     public void ToolDetected()
     {
         Debug.Log("ToolScript has detected tool");
+        Vibration.VibrateTwice(Convert.ToInt64(SettingsMenu.vibrationDuration * 1000) / 1000, sleepTimeBetweenVibrate);
+
         RefreshUI();
         uiScript.toolScript = this;
         uiScript.EnableUI();
         uiScript.worldSpaceDescriptionText.SetReferenceObject(canvasPosition);
-        Vibration.VibrateTwice(Convert.ToInt64(SettingsMenu.vibrationDuration * 1000) / 1000, sleepTimeBetweenVibrate);
     }
 
     public void ToolLost()
     {
-        uiScript.DisableUI();
+        // uiScript.DisableUI();
     }
-
+    
+    /// <summary>
+    /// start the movement of a tool
+    /// </summary>
+    /// <param name="index"></param>
     public void StartAnimation(int index)
     {
         Debug.Log("starting animation");

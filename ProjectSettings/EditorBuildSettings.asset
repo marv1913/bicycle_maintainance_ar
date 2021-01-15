@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ComponentDiscovery.unity
     guid: d0d5ec4fd72726f4aa82d28d4769115f
   - enabled: 1
-    path: Assets/Scenes/ComponentScene.unity
-    guid: 7ff0dad76f32e6747b9f5a2218127112
+    path: Assets/Scenes/Maintenance.unity
+    guid: 0b8787d1009c0a743ae6af2703c2661e
   m_configObjects: {}

@@ -16,44 +16,46 @@ public class UIScript : MonoBehaviour
     public Button previousText;
     public Button nextText;
     public TextMeshProUGUI worldSpaceText;
-    public TMP_Dropdown dropdownMenu;
+    
     public Text scrollbarText;
     public ToolScript toolScript;
     public int textLengthPerSite = 100;
     public StablizationScript worldSpaceDescriptionText;
     public GameObject worldSpaceCanvas;
-    public GameObject textScrollView; 
-    
+    public GameObject textScrollView;
+    public TMP_Dropdown dropdownMenu;
+
     private Guidelines _guidelines;
-    private GameObject _canvas;
     private List<string> _descriptionText;
     private int _currentDescriptionTextIndex = 0;
     private bool _cameraIsFreezed = false;
     private TextMeshProUGUI _text;
-
     
     
     // Start is called before the first frame update
     void Start()
     {
-        _canvas = gameObject.transform.GetChild(0).gameObject;
-        if (useWorldSpaceTextfield)
+        if (null != textScrollView && null != worldSpaceCanvas)
         {
-            _text = worldSpaceText;
-            textScrollView.SetActive(false);
+            if (useWorldSpaceTextfield)
+            {
+                _text = worldSpaceText;
+                textScrollView.SetActive(false);
+                worldSpaceCanvas.SetActive(true);
+
+            }
+            else
+            {
+                _text = textScrollView.GetComponentInChildren<TextMeshProUGUI>();
+                worldSpaceCanvas.SetActive(false);
+                textScrollView.SetActive(true);
+
+            }
         }
-        else
-        {
-            _text = textScrollView.GetComponentInChildren<TextMeshProUGUI>();
-            Debug.Log(_text);
-            worldSpaceCanvas.SetActive(false);
-        }
-        
     }
     
     public void EnableUI()
     {
-        this._canvas.SetActive(true);
         FillDropdownMenu();
     }
 
@@ -134,12 +136,7 @@ public class UIScript : MonoBehaviour
         }
         
     }
-    
-    public void DisableUI()
-    {
-        this._canvas.SetActive(false);
-    }
-    
+
     void Destroy()
     {
         dropdownMenu.onValueChanged.RemoveAllListeners();
@@ -224,9 +221,10 @@ public class UIScript : MonoBehaviour
     //     File.WriteAllText(_savefilePath, json);
     // }
 
-    private Guidelines LoadGuidelines(string savefileName)
+    public Guidelines LoadGuidelines(string savefileName)
     {
         // string json = File.ReadAllText(_savefilePath);
+        Debug.Log("Load: " + savefileName);
         TextAsset txt = (TextAsset)Resources.Load(savefileName, typeof(TextAsset));
         string json = txt.text;
         return JsonUtility.FromJson<Guidelines>(json);
@@ -238,7 +236,6 @@ public class UIScript : MonoBehaviour
         _guidelines = LoadGuidelines(savefileName);
         
         _descriptionText = new List<string>();
-        // _canvas = gameObject.transform.GetChild(0).gameObject;
         dropdownMenu.onValueChanged.AddListener(delegate { MyDropdownValueChangedHandler(dropdownMenu); });
         
         FillDescriptionTextList();
@@ -247,7 +244,7 @@ public class UIScript : MonoBehaviour
     }
     
     [System.Serializable]
-    private class Guideline
+    public class Guideline
     {
         public string buttonName;
         public string descriptionText;
@@ -255,7 +252,7 @@ public class UIScript : MonoBehaviour
     }
     
     [System.Serializable]
-    private class Guidelines
+    public class Guidelines
     {
         public List<Guideline> guidelines=new List<Guideline>();
     }
