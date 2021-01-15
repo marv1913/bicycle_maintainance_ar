@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\UIScript.cs" />
      <Compile Include="Assets\Scripts\Vibration.cs" />
      <Compile Include="Assets\Scripts\videoPlayerScript.cs" />
+     <Compile Include="Assets\SizeScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

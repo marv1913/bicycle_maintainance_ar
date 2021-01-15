@@ -56,6 +56,7 @@
           <e p="Vibration.cs" t="Include" />
           <e p="videoPlayerScript.cs" t="Include" />
         </e>
+        <e p="SizeScript.cs" t="Include" />
         <e p="StreamingAssets" t="Include">
           <e p="Vuforia" t="Include">
             <e p="bicycle.xml" t="Include" />
