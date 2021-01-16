@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/**
+* @author Marvin Rausch
+*/
 public class ToolScript : MonoBehaviour
 {
     public string savefileName;

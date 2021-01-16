@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+/**
+* @author Marvin Rausch
+*/
 public class MaintenanceMenu : MonoBehaviour
 {
     public static string componentToMaintain = "text/pedal_maintenance";

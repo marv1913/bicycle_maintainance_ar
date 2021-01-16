@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/**
+* @author Marvin Rausch
+*/
 public class SettingsMenu : MonoBehaviour
 {
     public static float vibrationDuration = 100;

@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-
+/**
+* @author Marvin Rausch
+*/
 public class PedalScript : MonoBehaviour
 {
     public GameObject wrenchRotationAxis;

@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/**
+* @author Marvin Rausch
+*/
 public class StablizationScript : MonoBehaviour
 {
     public float threshold = 0.03f;

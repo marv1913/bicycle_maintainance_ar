@@ -282,7 +282,8 @@ MonoBehaviour:
   - {fileID: 1091125324}
   - {fileID: 1198042034}
   - {fileID: 833057855}
---- !u!21 &329085948
+  previousButton: {fileID: 1293111956827675999}
+--- !u!21 &283983981
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -291,7 +292,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'pedal_rightMaterial
 
-    -62522'
+    14270'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -1762,7 +1763,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 329085948}
+  - {fileID: 283983981}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3342,7 +3343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1293111956734260278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3817,8 +3818,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1293111957957267934}
-        m_MethodName: PreviousPage
+      - m_Target: {fileID: 181473175}
+        m_MethodName: ShowPreviousStep
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

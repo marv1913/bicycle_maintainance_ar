@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.Serialization;
-
+/**
+* @author Marvin Rausch
+*/
 public class TrackableHandler : MonoBehaviour
 {
     public GameObject ui;

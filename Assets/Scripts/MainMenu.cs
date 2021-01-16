@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/**
+* @author Marvin Rausch
+*/
 public class MainMenu : MonoBehaviour
 {
     /// <summary>

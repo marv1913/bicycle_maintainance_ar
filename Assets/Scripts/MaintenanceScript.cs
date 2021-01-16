@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net.Mail;
 using NUnit.Framework;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+/**
+* @author Marvin Rausch
+*/
 public class MaintenanceScript : MonoBehaviour
 {
 
     public UIScript uiScript;
     public TextMeshProUGUI text;
     public List<ToolMovement> tools;
+    public Button previousButton;
 
     private int _index = 0;
 
@@ -26,6 +30,7 @@ public class MaintenanceScript : MonoBehaviour
         _guidelines = uiScript.LoadGuidelines(MaintenanceMenu.componentToMaintain);
         // load first instruction and it's animation
         LoadToolAndText();
+        SetVisibilityOfPreviousButton();
     }
 
     private void LoadText()
@@ -40,23 +45,14 @@ public class MaintenanceScript : MonoBehaviour
     
     public void ShowPreviousStep()
     {
-        // Debug.Log("next step");
-        // if (_index == _guidelines.guidelines.Count-1)
-        // {
-        //     Debug.Log("Wartung abgeschlossen!");
-        // }
-        // else
-        // {
-        //     _index++;
-        //     LoadText();
-        //     ShowToolAnimation();
-        // }
+        LoadStep(false);
     }
 
     private void LoadStep(bool nextStep)
     {
         // stop animation from last step
         Debug.Log("stop tool with index:" + _index);
+       
         tools[_index].StopMovement();
         int currentIndex = _index;
         if (nextStep)
@@ -67,10 +63,27 @@ public class MaintenanceScript : MonoBehaviour
         {
             _index--;
         }
-
         if (!LoadToolAndText())
         {
             _index = currentIndex;
+            if (_index == _guidelines.guidelines.Count - 1)
+            {
+                Debug.Log("Wartung abgeschlossen");
+            }
+        }
+        SetVisibilityOfPreviousButton();
+
+    }
+
+    private void SetVisibilityOfPreviousButton()
+    {
+        if (_index == 0)
+        {
+            previousButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            previousButton.gameObject.SetActive(true);
         }
     }
 
@@ -95,6 +108,5 @@ public class MaintenanceScript : MonoBehaviour
         
         return true;
     }
-    
     
 }

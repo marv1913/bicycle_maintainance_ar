@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
-
+/**
+* @author Marvin Rausch
+*/
 public class ToolMovement : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -94,7 +96,10 @@ public class ToolMovement : MonoBehaviour
     {
         toolRotationAxis.transform.localRotation = _defaultRotationTool;
         _defaultRotation = _defaultRotationTool.eulerAngles;
-        tool.SetActive(true);
+        if (_rotateTool)
+        {
+            tool.SetActive(true);
+        }
         _resetPosition = false;
     }
     

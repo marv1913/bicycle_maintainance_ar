@@ -8,6 +8,10 @@ using UnityEngine.UIElements;
 using Vuforia;
 using Button = UnityEngine.UI.Button;
 
+/**
+* @author Marvin Rausch
+*/
+
 public class UIScript : MonoBehaviour
 {
 
