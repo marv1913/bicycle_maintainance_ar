@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SizeScript : MonoBehaviour
 {
     public Camera m_Camera;
 
+    private RectTransform rt;
+
+    void Start()
+    {
+        rt = gameObject.GetComponent<RectTransform>();
+    }
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         var distance = Vector3.Distance(m_Camera.transform.position, transform.position);
-        //gameObject.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, distance / 5);
-        //gameObject.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, distance / 5);
-
-        RectTransform rt= gameObject.GetComponent<RectTransform>();
-        rt.sizeDelta = new Vector2(rt.sizeDelta.x * distance/10, rt.sizeDelta.y * distance/10);
+        rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, distance / 6);
+        rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, distance / 6);
+        
     }
 }
