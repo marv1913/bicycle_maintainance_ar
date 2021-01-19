@@ -37,7 +37,6 @@
             <e p="switch_gear_instructions.txt" t="Include" />
           </e>
         </e>
-        <e p="rotation.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="CameraFocusController.cs" t="Include" />
           <e p="LookAtScript.cs" t="Include" />
@@ -56,7 +55,6 @@
           <e p="Vibration.cs" t="Include" />
           <e p="videoPlayerScript.cs" t="Include" />
         </e>
-        <e p="SizeScript.cs" t="Include" />
         <e p="StreamingAssets" t="Include">
           <e p="Vuforia" t="Include">
             <e p="bicycle.xml" t="Include" />
