@@ -14,6 +14,8 @@ public class MaintenanceScript : MonoBehaviour
     public TextMeshProUGUI text;
     public List<ToolMovement> tools;
     public Button previousButton;
+    public GameObject overlayMenu;
+    public GameObject MaintenanceFinishedMenu;
 
     private int _index = 0;
 
@@ -26,7 +28,7 @@ public class MaintenanceScript : MonoBehaviour
             tool.StopMovement();
         }
         // load instructions from JSON
-        _guidelines = UIScript.LoadGuidelines(MaintenanceIntroduction.componentToMaintain);
+        _guidelines = UIScript.LoadGuidelines(MaintenanceMenu.componentToMaintain);
         List<UIScript.Guideline> temp = _guidelines.guidelines;
         // delete first element, because there introduction text is not a component
         temp.RemoveAt(0);
@@ -71,7 +73,7 @@ public class MaintenanceScript : MonoBehaviour
             _index = currentIndex;
             if (_index == _guidelines.guidelines.Count - 1)
             {
-                Debug.Log("Wartung abgeschlossen");
+                MaintenanceFinished();
             }
         }
         SetVisibilityOfPreviousButton();
@@ -110,6 +112,12 @@ public class MaintenanceScript : MonoBehaviour
         }
         
         return true;
+    }
+
+    private void MaintenanceFinished()
+    {
+        overlayMenu.SetActive(false);
+        MaintenanceFinishedMenu.SetActive(true);
     }
     
 }

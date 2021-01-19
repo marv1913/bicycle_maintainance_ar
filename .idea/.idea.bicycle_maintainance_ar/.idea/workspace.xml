@@ -19,17 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="minor refactoring">
+    <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="introduction text added to maintenance menu">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Text/pedal_maintenance.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Text/pedal_maintenance.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaintenanceMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaintenanceMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QCAR/somedata16" beforeDir="false" afterPath="$PROJECT_DIR$/QCAR/somedata16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +42,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/MainMenu.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/MainMenu.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MaintenanceIntroduction.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -55,6 +51,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceIntroduction.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Text/pedal_maintenance.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" />
     </changedPaths>
   </component>
@@ -100,7 +97,7 @@
       <updated>1607690639700</updated>
       <workItem from="1607690650720" duration="3891000" />
       <workItem from="1610553526122" duration="420000" />
-      <workItem from="1611053452227" duration="6752000" />
+      <workItem from="1611053452227" duration="8402000" />
     </task>
     <task id="LOCAL-00001" summary="minor refactoring">
       <created>1611050657283</created>
@@ -116,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611053787591</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="introduction text added to maintenance menu">
+      <created>1611063793698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611063793698</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +144,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="minor refactoring" />
     <MESSAGE value="maintenance preparation screen added" />
-    <option name="LAST_COMMIT_MESSAGE" value="maintenance preparation screen added" />
+    <MESSAGE value="introduction text added to maintenance menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="introduction text added to maintenance menu" />
   </component>
 </project>
