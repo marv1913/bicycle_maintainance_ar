@@ -44,7 +44,6 @@
           <e p="MaintenanceMenu.cs" t="Include" />
           <e p="MaintenanceScript.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
-          <e p="PedalScript.cs" t="Include" />
           <e p="SettingsMenu.cs" t="Include" />
           <e p="SizeScript.cs" t="Include" />
           <e p="StablizationScript.cs" t="Include" />

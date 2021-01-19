@@ -59,8 +59,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\TransformCopier.cs" />
-     <None Include="Assets\Editor\Vuforia\TargetsetData\bicycle_info.xml" />
      <None Include="Assets\Editor\Vuforia\TargetsetData\VuforiaMars_Object_info.xml" />
+     <None Include="Assets\Editor\Vuforia\TargetsetData\bicycle_info.xml" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>

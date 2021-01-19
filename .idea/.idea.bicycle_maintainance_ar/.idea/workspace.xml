@@ -19,13 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="introduction text added to maintenance menu">
+    <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="fixed vuforia issues">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Vuforia/TargetsetData/bicycle_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Vuforia/TargetsetData/bicycle_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Vuforia/TargetsetData/bicycle_info.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Vuforia/TargetsetData/bicycle_info.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ComponentDiscovery.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ComponentDiscovery.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PedalScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PedalScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Vuforia/bicycle_OT.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Vuforia/bicycle_OT.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Vuforia/bicycle_OT.dat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Vuforia/bicycle_OT.dat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Vuforia/bicycle_OT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Vuforia/bicycle_OT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Vuforia/bicycle_OT.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Vuforia/bicycle_OT.xml.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +47,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/MainMenu.unity" root0="SKIP_HIGHLIGHTING" />
@@ -47,12 +56,12 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceIntroduction.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Text/pedal_maintenance.txt" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lVmSen7vIllxo0HlNHn7O7T923" />
@@ -97,7 +106,7 @@
       <updated>1607690639700</updated>
       <workItem from="1607690650720" duration="3891000" />
       <workItem from="1610553526122" duration="420000" />
-      <workItem from="1611053452227" duration="8402000" />
+      <workItem from="1611053452227" duration="12957000" />
     </task>
     <task id="LOCAL-00001" summary="minor refactoring">
       <created>1611050657283</created>
@@ -120,7 +129,28 @@
       <option name="project" value="LOCAL" />
       <updated>1611063793698</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finish screen for maintenance mode added">
+      <created>1611067857718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611067857718</updated>
+    </task>
+    <task id="LOCAL-00005" summary="finish screen for maintenance mode added">
+      <created>1611067991985</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611067991985</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed vuforia issues">
+      <created>1611070372436</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611070372437</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +175,8 @@
     <MESSAGE value="minor refactoring" />
     <MESSAGE value="maintenance preparation screen added" />
     <MESSAGE value="introduction text added to maintenance menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="introduction text added to maintenance menu" />
+    <MESSAGE value="finish screen for maintenance mode added" />
+    <MESSAGE value="fixed vuforia issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed vuforia issues" />
   </component>
 </project>
