@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFocusController.cs" />
-     <Compile Include="Assets\Scripts\GameHandler.cs" />
      <Compile Include="Assets\Scripts\LookAtScript.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MaintenanceMenu.cs" />

@@ -15,7 +15,7 @@ using Button = UnityEngine.UI.Button;
 public class UIScript : MonoBehaviour
 {
 
-    public static bool useWorldSpaceTextfield = false;
+    public static bool useWorldSpaceTextfield = true;
     
     public Button previousText;
     public Button nextText;

@@ -4,6 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+* @author Karl Buklewski
+*/
 public class LookAtScript : MonoBehaviour
 {
 
@@ -18,7 +21,6 @@ public class LookAtScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         transform.LookAt(transform.position + m_Camera.transform.rotation * Vector3.forward,
             m_Camera.transform.rotation * Vector3.up);
         
@@ -26,7 +28,5 @@ public class LookAtScript : MonoBehaviour
         //Resize the Canvas if the distance changes
         rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, distance / 5);
         rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, distance / 5);
-        
-        
     }
 }
