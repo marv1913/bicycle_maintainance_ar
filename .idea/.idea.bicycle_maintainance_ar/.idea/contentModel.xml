@@ -32,6 +32,7 @@
         </e>
         <e p="Resources" t="Include">
           <e p="Text" t="Include">
+            <e p="pedal_left_instructions.txt" t="Include" />
             <e p="pedal_maintenance.txt" t="Include" />
             <e p="pedal_right_instructions.txt" t="Include" />
             <e p="switch_gear_instructions.txt" t="Include" />

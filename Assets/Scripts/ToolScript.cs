@@ -27,11 +27,7 @@ public class ToolScript : MonoBehaviour
         uiScript.EnableUI();
         uiScript.worldSpaceDescriptionText.SetReferenceObject(canvasPosition);
     }
-
-    public void ToolLost()
-    {
-        // uiScript.DisableUI();
-    }
+    
     
     /// <summary>
     /// start the movement of a tool
