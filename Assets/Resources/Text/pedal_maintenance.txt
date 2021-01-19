@@ -1,2 +1,3 @@
-{"guidelines":[{"buttonName":"description","descriptionText":"Als erstes..."},
+{"guidelines":[{"buttonName":"description","descriptionText":"Dauer:    ca. 10min\n\nSchwierigkeitsgrad:    mittel\n\nbenötigte Hilfemittel:    Fett, Maulschlüssel"},
+{"buttonName":"description","descriptionText":"Als erstes..."},
 {"buttonName":"description","descriptionText":"Der nächste Schritt..."}]}

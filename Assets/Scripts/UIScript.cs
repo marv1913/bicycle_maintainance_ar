@@ -225,7 +225,7 @@ public class UIScript : MonoBehaviour
     //     File.WriteAllText(_savefilePath, json);
     // }
 
-    public Guidelines LoadGuidelines(string savefileName)
+    public static Guidelines LoadGuidelines(string savefileName)
     {
         // string json = File.ReadAllText(_savefilePath);
         Debug.Log("Load: " + savefileName);

@@ -42,6 +42,7 @@
           <e p="CameraFocusController.cs" t="Include" />
           <e p="LookAtScript.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
+          <e p="MaintenanceIntroduction.cs" t="Include" />
           <e p="MaintenanceMenu.cs" t="Include" />
           <e p="MaintenanceScript.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />

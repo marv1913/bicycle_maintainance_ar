@@ -11,7 +11,6 @@ using UnityEngine.UI;
 public class MaintenanceScript : MonoBehaviour
 {
 
-    public UIScript uiScript;
     public TextMeshProUGUI text;
     public List<ToolMovement> tools;
     public Button previousButton;
@@ -27,7 +26,11 @@ public class MaintenanceScript : MonoBehaviour
             tool.StopMovement();
         }
         // load instructions from JSON
-        _guidelines = uiScript.LoadGuidelines(MaintenanceMenu.componentToMaintain);
+        _guidelines = UIScript.LoadGuidelines(MaintenanceIntroduction.componentToMaintain);
+        List<UIScript.Guideline> temp = _guidelines.guidelines;
+        // delete first element, because there introduction text is not a component
+        temp.RemoveAt(0);
+        _guidelines.guidelines = temp;
         // load first instruction and it's animation
         LoadToolAndText();
         SetVisibilityOfPreviousButton();
