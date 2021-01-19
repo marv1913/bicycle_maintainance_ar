@@ -78,6 +78,7 @@ public class ToolMovement : MonoBehaviour
         }
         if (rotationLimit.z != -1)
         {
+            Debug.Log(toolRotationAxis.transform.localRotation.eulerAngles.z);
             if (zShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.z > rotationLimit.z|| !zShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.z < rotationLimit.z)
             {
                 restoreToDefaultRotation = true;
