@@ -1,8 +1,10 @@
+
 ﻿using UnityEngine;
 
 /**
 * @author Karl Buklewski
 */
+
 public class SizeScript : MonoBehaviour
 {
     public Camera m_Camera;
