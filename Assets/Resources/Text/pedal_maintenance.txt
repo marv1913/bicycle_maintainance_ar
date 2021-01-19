@@ -1,3 +1,4 @@
-{"guidelines":[{"buttonName":"description","descriptionText":"Dauer:    ca. 10min\n\nSchwierigkeitsgrad:    mittel\n\nbenötigte Hilfemittel:    Fett, Maulschlüssel"},
-{"buttonName":"description","descriptionText":"Als erstes..."},
-{"buttonName":"description","descriptionText":"Der nächste Schritt..."}]}
+{"guidelines":[{"buttonName":"description","descriptionText":"Wenn das Pedal beim Treten ein Knacken von sich gibt, muss es sich nicht unbedingt um einen Schaden des Pedallagers handeln. Abhilfe kann auch das Fetten der Pedalgewinde bringen.\n\nDauer:    ca. 10min\n\nSchwierigkeitsgrad:    mittel\n\nbenötigte Hilfemittel:    Fett, Maulschlüssel"},
+{"buttonName":"description","descriptionText":"Zunächst sollte das Pedal demontiert werden. Das rechte Pedal hat ein Rechtsgewinde. Man muss den Schraubenschlüssel also, wie bei der Animation zu sehen, gegen den Uhrzeigersinn bewegen, um das Pedal zu demontieren."},
+{"buttonName":"description","descriptionText":"Nun sollte das Gewinde zuerst gereinigt werden. Nach dem es gereinigt wurde, muss es erneut gefette werden. Dazu sollte das Fett gleichmäßig auf dem gesammten Gewinde verteilt werden."},
+{"buttonName":"description","descriptionText":"Jetzt kann die Pedale wieder montiert werden. Zuerst setzt man das Pedal in das Gewinde der Kurbel mit der Hand an. Danach nimmt man den Schraubenschlüssel zur Hand, um das Pedal schlussendlich mit hohem Drehmoment festzuziehen."}]}

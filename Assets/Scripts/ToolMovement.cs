@@ -65,7 +65,6 @@ public class ToolMovement : MonoBehaviour
         {
             if (xShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.x > rotationLimit.x || !xShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.x < rotationLimit.x)
             {
-                Debug.Log("restore");
                 restoreToDefaultRotation = true;
             }
         }
@@ -74,10 +73,10 @@ public class ToolMovement : MonoBehaviour
             if (yShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.y > rotationLimit.y || !yShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.y < rotationLimit.y)
             {
                 restoreToDefaultRotation = true;
+
             }
         }
         if (rotationLimit.z != -1)
-            Debug.Log(toolRotationAxis.transform.localRotation.eulerAngles.z );
         {
             if (zShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.z > rotationLimit.z|| !zShouldBeGreaterThanLimit && toolRotationAxis.transform.localRotation.eulerAngles.z < rotationLimit.z)
             {

@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="new object target for pedal added">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Text/pedal_left_instructions - Copy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Text/pedal_left_instructions - Copy.txt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Text/pedal_maintenance.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Text/pedal_maintenance.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +40,22 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/MainMenu.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/ComponentDiscovery.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/MainMenu.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/ComponentDiscovery.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceIntroduction.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Text/pedal_maintenance.txt" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ToolScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ToolMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Text/pedal_left_instructions - Copy.txt" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Text/pedal_maintenance.txt" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ToolMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lVmSen7vIllxo0HlNHn7O7T923" />
@@ -102,7 +100,7 @@
       <updated>1607690639700</updated>
       <workItem from="1607690650720" duration="3891000" />
       <workItem from="1610553526122" duration="420000" />
-      <workItem from="1611053452227" duration="14511000" />
+      <workItem from="1611053452227" duration="17532000" />
     </task>
     <task id="LOCAL-00001" summary="minor refactoring">
       <created>1611050657283</created>
@@ -153,7 +151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611073032167</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new object target for pedal added">
+      <created>1611078067385</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611078067385</updated>
+    </task>
+    <task id="LOCAL-00009" summary="new object target for pedal added">
+      <created>1611078202994</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611078202994</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
