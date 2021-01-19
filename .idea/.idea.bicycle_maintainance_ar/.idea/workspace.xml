@@ -19,13 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/indexLayout.xml" afterDir="false" />
+    <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="adjusted auto sizing configuration for world space canvas">
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QCAR/somedata16" beforeDir="false" afterPath="$PROJECT_DIR$/QCAR/somedata16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorMigrationScripts.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EditorMigrationScripts.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +37,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Assets/LookAtScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/connectionLine.cs" />
-        <option value="$PROJECT_DIR$/Assets/videoPlayerScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LookAtScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1lVmSen7vIllxo0HlNHn7O7T923" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,7 +59,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -75,7 +68,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
