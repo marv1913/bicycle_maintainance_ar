@@ -19,10 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="maintenance mode improved">
+    <list default="true" id="29e3070d-19bf-4a28-b047-4f440cc9c353" name="Default Changelist" comment="maintenance mode placement of gameobjects improved">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bicycle_maintainance_ar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ComponentDiscovery.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ComponentDiscovery.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Maintenance.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Maintenance.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToolMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToolMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +45,6 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/MainMenu.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/ComponentDiscovery.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/MainMenu.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Assets/Scenes/ComponentDiscovery.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -55,8 +56,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/ToolScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Text/pedal_left_instructions - Copy.txt" />
       <option value="$PROJECT_DIR$/Assets/Resources/Text/pedal_maintenance.txt" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ToolMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MaintenanceScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lVmSen7vIllxo0HlNHn7O7T923" />
@@ -101,7 +103,8 @@
       <updated>1607690639700</updated>
       <workItem from="1607690650720" duration="3891000" />
       <workItem from="1610553526122" duration="420000" />
-      <workItem from="1611053452227" duration="18734000" />
+      <workItem from="1611053452227" duration="18874000" />
+      <workItem from="1611154676483" duration="2353000" />
     </task>
     <task id="LOCAL-00001" summary="minor refactoring">
       <created>1611050657283</created>
@@ -173,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611081277074</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="maintenance mode placement of gameobjects improved">
+      <created>1611084374565</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611084374565</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +212,7 @@
     <MESSAGE value="fixed vuforia issues" />
     <MESSAGE value="new object target for pedal added" />
     <MESSAGE value="maintenance mode improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="maintenance mode improved" />
+    <MESSAGE value="maintenance mode placement of gameobjects improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="maintenance mode placement of gameobjects improved" />
   </component>
 </project>

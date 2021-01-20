@@ -16,6 +16,7 @@ public class MaintenanceScript : MonoBehaviour
     public Button previousButton;
     public GameObject overlayMenu;
     public GameObject MaintenanceFinishedMenu;
+    
 
     private int _index = 0;
 

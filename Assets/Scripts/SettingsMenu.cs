@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 /**
@@ -12,6 +11,8 @@ public class SettingsMenu : MonoBehaviour
 
     private Slider _slider;
     private Toggle _textPositionToggle;
+    public Slider sliderUI;
+    public TextMeshProUGUI textSliderValue;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class SettingsMenu : MonoBehaviour
         _textPositionToggle.isOn = UIScript.useWorldSpaceTextfield;
 
         vibrationDuration = _slider.value;
+        ShowSliderValue();
     }
 
     public void SetDuration(float duration)
@@ -33,5 +35,9 @@ public class SettingsMenu : MonoBehaviour
     {
         UIScript.useWorldSpaceTextfield = change.isOn;
     }
-  
+    
+    public void ShowSliderValue () {
+        string sliderMessage =   Math.Round(sliderUI.value, 0) +  "ms";
+        textSliderValue.text = sliderMessage;
+    }
 }
