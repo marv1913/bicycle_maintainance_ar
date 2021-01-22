@@ -25,7 +25,7 @@ This AR solution can help you to maintain or repair your bicycle by yourself. Th
 ## Discover Mode
 Here you can discover the maintenance and repair options of each component by your own. After a component was scanned, a description text and a dropdown menu appear on the UI. Here you can see some general information about the component. In the dropdown menu you can choose between the different maintenance/ repair options. The instructions are described as text and addtionally there are 3D objects dropped on the camera scene. The 3D objects support the instructions of the maintenace step. E.g. a screwdriver is placed on the screw mentioned in the instruction text and is turning in the correct direction to reach the goal of mainteance/repair step.
 
-[screenshot of discover mode](screenshot/discover_mode.png)
+![screenshot of discover mode](screenshot/discover_mode.png)
 
 
 ## Maintenance Mode
