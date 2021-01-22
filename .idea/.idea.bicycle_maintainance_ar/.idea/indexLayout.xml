@@ -24,6 +24,7 @@
       <Path>Temp</Path>
       <Path>UserSettings</Path>
       <Path>obj</Path>
+      <Path>screenshot</Path>
     </explicitExcludes>
   </component>
 </project>

@@ -13,10 +13,6 @@ public class ToolScript : MonoBehaviour
     public long sleepTimeBetweenVibrate = 100;
     public GameObject canvasPosition;
     
-
-    /// <summary>
-    /// should be added to OnTargetFoundEvent
-    /// </summary>
     public void ToolDetected()
     {
         Debug.Log("ToolScript has detected tool");
