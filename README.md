@@ -19,7 +19,7 @@ This AR solution can help you to maintain or repair your bicycle by yourself. Th
 - print the [marker](Assets/Marker) and place them on your bike's compoenents
 - now you can start using the app
 
- If you dont't want to use image targets you can also use object target to detect the components of your bicycle. To create new object targets you have to [download](https://library.vuforia.com/articles/Training/Vuforia-Object-Scanner-Users-Guide.html) the 'Vuforia Scanner App`:
+ If you dont't want to use image targets you can also use object target to detect the components of your bicycle. To create new object targets you have to [download](https://library.vuforia.com/articles/Training/Vuforia-Object-Scanner-Users-Guide.html) the 'Vuforia Scanner App':
  - after you have created a new object target you can import it into the Scene `ComponentDiscovery`. There you can find an example object target named `LeftPedalObjectTarget`. There you can see which scripts should be added to the new target and how it should be configured.
 
 ## Discover Mode
