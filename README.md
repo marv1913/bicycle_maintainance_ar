@@ -1,9 +1,15 @@
-# bicycle_maintainance_ar
-Von Marvin Rausch und Karl Buklewski
+# Bicycle Maintenance AR App
+From Marvin Rausch und Karl Buklewski
 
-Unity Version: 2019.4.17f1
+## Introduction
+This AR solution can help you to maintain or repair your bicycle by yourself. There are two different modes:
+- Discover Mode
+- Maintenance Mode
 
-Es wird Vuforia benötigt.
+## Build the Application
+- this application was build with Unity 2019.4.17f1 (LTS version)
+- to build the app the Vuforia plugin for Unity is required
+
 
 MainMenu Scene öffnen und starten. 
 Mit den ausgedruckten Markern aus dem Marker Ordner 
