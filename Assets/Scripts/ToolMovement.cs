@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.Serialization;
 /**
 * @author Marvin Rausch
+* general script for animations of different types of repair tools
 */
 public class ToolMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject toolRotationAxis;
     public GameObject tool;
     public Vector3 rotationVector;
@@ -26,7 +26,10 @@ public class ToolMovement : MonoBehaviour
         _defaultRotationTool = toolRotationAxis.transform.localRotation;
         _defaultRotation = toolRotationAxis.transform.localRotation.eulerAngles;
     }
-
+    
+    /// <summary>
+    /// make tool visibly and start animation
+    /// </summary>
     public void StartMovement()
     {
         if (!_resetPosition)
@@ -41,6 +44,9 @@ public class ToolMovement : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// make tool invisibly and stop animation
+    /// </summary>
     public void StopMovement()
     {
         _rotateTool = false;
@@ -49,7 +55,6 @@ public class ToolMovement : MonoBehaviour
     }
     
 
-    // Update is called once per frame
     void Update()
     {
         if (_rotateTool)
@@ -57,7 +62,10 @@ public class ToolMovement : MonoBehaviour
             RotateTool();
         }
     }
-
+    
+    /// <summary>
+    /// reset rotation of tool if current rotation is out of defined range of animation
+    /// </summary>
     private void RestoreToolPosition()
     {
         bool restoreToDefaultRotation = false;
@@ -87,12 +95,16 @@ public class ToolMovement : MonoBehaviour
 
         if (restoreToDefaultRotation)
         {
+            // disable tool for 200ms to get an natural animation
             tool.gameObject.SetActive(false);
             _resetPosition = true;
             Invoke("SetToolActiveAgain", 0.2f);
         }
     }
-
+    
+    /// <summary>
+    /// reset rotation of tool to default and make it visible again
+    /// </summary>
     private void SetToolActiveAgain()
     {
         toolRotationAxis.transform.localRotation = _defaultRotationTool;
@@ -104,6 +116,9 @@ public class ToolMovement : MonoBehaviour
         _resetPosition = false;
     }
     
+    /// <summary>
+    /// apply rotation vector on tool to rotate the tool
+    /// </summary>
     private void RotateTool()
     {
         _defaultRotation = _defaultRotation + rotationVector * Time.deltaTime;

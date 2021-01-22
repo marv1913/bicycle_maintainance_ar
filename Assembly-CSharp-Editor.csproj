@@ -73,6 +73,9 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="VuforiaScripts">
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -81,6 +84,9 @@
  </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="VuforiaEditorScripts">
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
@@ -93,12 +99,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="VuforiaScripts">
- <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
- </Reference>
- <Reference Include="VuforiaEditorScripts">
- <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -289,14 +289,14 @@
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="nunit.framework">
- <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
  <Reference Include="Vuforia.UnityExtensions.Editor">
  <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/PackageCache/com.ptc.vuforia.engine@716a8216fe/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/PackageCache/com.ptc.vuforia.engine@716a8216fe/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Users/marvi/RiderProjects/bicycle_maintainance_ar/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

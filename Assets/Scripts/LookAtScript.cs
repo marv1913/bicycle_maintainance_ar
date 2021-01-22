@@ -5,13 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /**
-* @author Karl Buklewski
+* @author Karl Buklewski, Marvin Rausch
 */
 public class LookAtScript : MonoBehaviour
 {
 
     public Camera m_Camera;
-
     private RectTransform rt;
 
     void Start()
@@ -21,6 +20,7 @@ public class LookAtScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // make sure canvas is always turning to the direction of the user
         transform.LookAt(transform.position + m_Camera.transform.rotation * Vector3.forward,
             m_Camera.transform.rotation * Vector3.up);
         

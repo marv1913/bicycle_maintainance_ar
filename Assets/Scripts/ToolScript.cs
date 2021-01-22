@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 /**
 * @author Marvin Rausch
+* script for all repair tools to manage what should happen when a tool was detected
 */
 public class ToolScript : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class ToolScript : MonoBehaviour
     public long sleepTimeBetweenVibrate = 100;
     public GameObject canvasPosition;
     
+    /// <summary>
+    /// give user haptically feedback and refresh UI
+    /// </summary>
     public void ToolDetected()
     {
         Debug.Log("ToolScript has detected tool");
@@ -20,15 +24,14 @@ public class ToolScript : MonoBehaviour
 
         RefreshUI();
         uiScript.toolScript = this;
-        uiScript.EnableUI();
+        uiScript.FillDropdownMenu();
         uiScript.worldSpaceDescriptionText.SetReferenceObject(canvasPosition);
     }
     
-    
     /// <summary>
-    /// start the movement of a tool
+    /// start the movement of the correct tool
     /// </summary>
-    /// <param name="index"></param>
+    /// <param name="index"></param> index of tool in list which should be set active
     public void StartAnimation(int index)
     {
         Debug.Log("starting animation");
@@ -45,7 +48,10 @@ public class ToolScript : MonoBehaviour
             toolMovements[index].StartMovement();
         }
     }
-
+    
+    /// <summary>
+    /// load instruction text for tool
+    /// </summary>
     public void RefreshUI()
     {
         // load button names and description text for detected Tool

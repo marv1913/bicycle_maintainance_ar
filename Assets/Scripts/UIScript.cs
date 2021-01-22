@@ -24,7 +24,7 @@ public class UIScript : MonoBehaviour
     public Text scrollbarText;
     public ToolScript toolScript;
     public int textLengthPerSite = 100;
-    public StablizationScript worldSpaceDescriptionText;
+    public StabilizationScript worldSpaceDescriptionText;
     public GameObject worldSpaceCanvas;
     public GameObject textScrollView;
     public TMP_Dropdown dropdownMenu;
@@ -46,7 +46,6 @@ public class UIScript : MonoBehaviour
                 _text = worldSpaceText;
                 textScrollView.SetActive(false);
                 worldSpaceCanvas.SetActive(true);
-
             }
             else
             {
@@ -58,11 +57,9 @@ public class UIScript : MonoBehaviour
         }
     }
     
-    public void EnableUI()
-    {
-        FillDropdownMenu();
-    }
-
+    /// <summary>
+    /// create string list from string to distribute text over multiple pages
+    /// </summary>
     private void FillDescriptionTextList()
     {
         if (useWorldSpaceTextfield)
@@ -82,7 +79,10 @@ public class UIScript : MonoBehaviour
             _descriptionText.Add(fullText);
         }
     }
-
+    
+    /// <summary>
+    /// show text of current page
+    /// </summary>
     private void ShowCurrentText()
     {
         if (useWorldSpaceTextfield)
@@ -91,7 +91,10 @@ public class UIScript : MonoBehaviour
 
         }
     }
-
+    
+    /// <summary>
+    /// go to next page
+    /// </summary>
     public void NextPage()
     {
         if (_currentDescriptionTextIndex < _descriptionText.Count - 1)
@@ -100,7 +103,10 @@ public class UIScript : MonoBehaviour
         }
         SetNavigationButtonVisibility();
     }
-
+    
+    /// <summary>
+    /// go to previous page
+    /// </summary>
     public void PreviousPage()
     {
         if (_currentDescriptionTextIndex != 0)
@@ -109,7 +115,10 @@ public class UIScript : MonoBehaviour
         }
         SetNavigationButtonVisibility();
     }
-
+    
+    /// <summary>
+    /// set visibility of text navigation button in world space canvas mode
+    /// </summary>
     private void SetNavigationButtonVisibility()
     {
         if (useWorldSpaceTextfield)
@@ -141,12 +150,10 @@ public class UIScript : MonoBehaviour
         
     }
 
-    void Destroy()
-    {
-        dropdownMenu.onValueChanged.RemoveAllListeners();
-    }
-
-    private void FillDropdownMenu()
+    /// <summary>
+    /// load all available options and fill dropdown menu
+    /// </summary>
+    public void FillDropdownMenu()
     {
         dropdownMenu.options.Clear();
         foreach (var guideline in _guidelines.guidelines)
@@ -162,7 +169,11 @@ public class UIScript : MonoBehaviour
       
         Debug.Log("dropdown filled");
     }
-
+    
+    /// <summary>
+    /// stop camera
+    /// you can still interact with the UI
+    /// </summary>
     public void FreezeCamera()
     {
         if (_cameraIsFreezed)
@@ -177,15 +188,10 @@ public class UIScript : MonoBehaviour
         }
     }
     
-    // private void StopAllAnimations()
-    // {
-    //     foreach (var tool in tools)
-    //     {
-    //         ToolMovement toolMovement = tool.GetComponent<ToolMovement>();
-    //         toolMovement.StopMovement();
-    //     }
-    //    
-    // }
+    /// <summary>
+    /// is called if user has interacted with the dropdown menu
+    /// </summary>
+    /// <param name="target"></param> target dropdown menu
     private void MyDropdownValueChangedHandler(TMP_Dropdown target)
     {
         toolScript.StartAnimation(target.value);
@@ -200,31 +206,32 @@ public class UIScript : MonoBehaviour
             _text.text = _guidelines.guidelines[target.value].descriptionText;
         }
     }
-
+    
+    /// <summary>
+    /// set current option of dropdown menu
+    /// </summary>
+    /// <param name="index"></param> index of option you want to set
     public void SetDropdownIndex(int index)
     {
         dropdownMenu.value = index;
     }
 
-    private void SetScrollbarText(int index)
-    {
-        switch (index)
-        {
-            case 0:
-                scrollbarText.text = "this is the right pedal";
-                break;
-            case 1:
-                scrollbarText.text = "use a wrench moving to shown direction to remove the pedal";
-                break;
-        }
+    /// <summary>
+    /// helper function to generate JSON guideline file from script
+    /// </summary>
+    /// <param name="guideline"></param> guideline object which should be exported as JSON
+    /// <param name="savefilePath"></param> directory where JSON file should be saved
+    private void SaveGuidelines(Guidelines guideline, string savefilePath)
+    { 
+        string json = JsonUtility.ToJson(guideline);
+        File.WriteAllText(savefilePath, json);
     }
-
-    // private void SaveGuidelines(Guidelines guideline)
-    // { 
-    //     string json = JsonUtility.ToJson(guideline);
-    //     File.WriteAllText(_savefilePath, json);
-    // }
-
+    
+    /// <summary>
+    /// load Guidelines from JSON file
+    /// </summary>
+    /// <param name="savefileName"></param> directory of JSON file
+    /// <returns></returns> Guidelines obj loaded from JSON file
     public static Guidelines LoadGuidelines(string savefileName)
     {
         // string json = File.ReadAllText(_savefilePath);
@@ -233,7 +240,11 @@ public class UIScript : MonoBehaviour
         string json = txt.text;
         return JsonUtility.FromJson<Guidelines>(json);
     }
-
+    
+    /// <summary>
+    /// load guidelines from JSON file and fill UI with information
+    /// </summary>
+    /// <param name="savefileName"></param>
     public void LoadAppropriateUIText(string savefileName)
     {
         Debug.Log("loading savefile: " + savefileName);
@@ -244,17 +255,23 @@ public class UIScript : MonoBehaviour
         
         FillDescriptionTextList();
         SetNavigationButtonVisibility();
-
     }
     
+    /// <summary>
+    /// class for guideline object
+    /// has properties for button name and description text
+    /// </summary>
     [System.Serializable]
     public class Guideline
     {
         public string buttonName;
         public string descriptionText;
-
     }
     
+    /// <summary>
+    /// Guidelines are saved as JSON and loaded from JSON file
+    /// contains a List of Guideline objects
+    /// </summary>
     [System.Serializable]
     public class Guidelines
     {

@@ -1,6 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// triggers vibration on devices of different platforms
+/// mostly from: https://gist.github.com/aVolpe/707c8cf46b1bb8dfb363
+/// </summary>
 public static class Vibration
 {
 

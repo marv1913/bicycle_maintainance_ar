@@ -1,23 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Vuforia;
 
+/**
+ * this script is necessary, because the vuforia does not set the focus of the smartphone camera automaticall
+ * source: https://medium.com/@harmittaa/setting-camera-focus-mode-for-vuforia-arcamera-in-unity-6b3745297c3d
+ */
 public class CameraFocusController : MonoBehaviour
 {
-    private bool mVuforiaStarted = false;
+    private bool _mVuforiaStarted = false;
 
     void Start()
     {
         VuforiaARController vuforia = VuforiaARController.Instance;
 
-        if (vuforia != null)
-            vuforia.RegisterVuforiaStartedCallback(StartAfterVuforia);
+        vuforia?.RegisterVuforiaStartedCallback(StartAfterVuforia);
     }
 
     private void StartAfterVuforia()
     {
-        mVuforiaStarted = true;
+        _mVuforiaStarted = true;
         SetAutofocus();
     }
 
@@ -26,7 +27,7 @@ public class CameraFocusController : MonoBehaviour
         if (!pause)
         {
             // App resumed
-            if (mVuforiaStarted)
+            if (_mVuforiaStarted)
             {
                 // App resumed and vuforia already started
                 // but lets start it again...
