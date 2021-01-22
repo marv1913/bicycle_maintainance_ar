@@ -8,7 +8,8 @@ This AR solution can help you to maintain or repair your bicycle by yourself. Th
 
 ## Build the Application
 - this application was build with Unity 2019.4.17f1 (LTS version)
-- to build the app the Vuforia plugin for Unity is required
+- to build the App the Vuforia plugin for Unity is required
+- if the Vuforia license is expired, you have to create your own account
 
 
 MainMenu Scene öffnen und starten. 
