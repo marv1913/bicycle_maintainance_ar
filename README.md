@@ -15,7 +15,7 @@ This AR solution can help you to maintain or repair your bicycle by yourself. Th
 - if you want to start the application on PC, you first have to open the scene named `MainMenu` under `Assets/Scenes`
 
 ## Run the App
-- before you can start using the app you have to prepare you bicycle
+- before you can start using the app you have to prepare your bicycle
 - print the [marker](Assets/Marker) and place them on your bike's compoenents
 - now you can start using the app
 
